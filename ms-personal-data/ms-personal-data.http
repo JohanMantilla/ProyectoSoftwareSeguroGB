@@ -1,0 +1,6 @@
+@ms_personal_data_HostAddress = http://localhost:5015
+
+GET {{ms_personal_data_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

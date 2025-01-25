@@ -1,0 +1,6 @@
+@ms_notify_HostAddress = http://localhost:5252
+
+GET {{ms_notify_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

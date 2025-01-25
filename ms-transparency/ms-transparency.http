@@ -1,0 +1,6 @@
+@ms_transparency_HostAddress = http://localhost:5241
+
+GET {{ms_transparency_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

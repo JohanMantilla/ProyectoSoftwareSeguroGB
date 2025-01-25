@@ -1,0 +1,6 @@
+@ms_consent_HostAddress = http://localhost:5118
+
+GET {{ms_consent_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

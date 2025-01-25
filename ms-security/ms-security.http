@@ -1,0 +1,6 @@
+@ms_security_HostAddress = http://localhost:5281
+
+GET {{ms_security_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

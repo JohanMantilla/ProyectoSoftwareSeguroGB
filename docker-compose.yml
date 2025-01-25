@@ -1,0 +1,66 @@
+services:
+  api-gateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: api-gateway/Dockerfile
+    ports:
+    - "8001:8081"
+
+  ms-audit:
+    image: ${DOCKER_REGISTRY-}msaudit
+    build:
+      context: .
+      dockerfile: ms-audit/Dockerfile
+    ports:
+    - "8011:8081"
+
+
+  ms-consent:
+    image: ${DOCKER_REGISTRY-}msconsent
+    build:
+      context: .
+      dockerfile: ms-consent/Dockerfile
+    ports:
+    - "8021:8081"
+
+  ms-notify:
+    image: ${DOCKER_REGISTRY-}msnotify
+    build:
+      context: .
+      dockerfile: ms-notify/Dockerfile
+    ports:
+    - "8031:8081" 
+
+  ms-personal-data:
+    image: ${DOCKER_REGISTRY-}mspersonaldata
+    build:
+      context: .
+      dockerfile: ms-personal-data/Dockerfile
+    ports:
+    - "8041:8081" 
+
+
+  ms-security:
+    image: ${DOCKER_REGISTRY-}mssecurity
+    build:
+      context: .
+      dockerfile: ms-security/Dockerfile
+    ports:
+    - "8051:8081" 
+
+  ms-transparency:
+    image: ${DOCKER_REGISTRY-}mstransparency
+    build:
+      context: .
+      dockerfile: ms-transparency/Dockerfile
+    ports:
+    - "8061:8081" 
+
+  ms-users:
+    image: ${DOCKER_REGISTRY-}msusers
+    build:
+      context: .
+      dockerfile: ms-users/Dockerfile
+    ports:
+    - "8071:8081" 

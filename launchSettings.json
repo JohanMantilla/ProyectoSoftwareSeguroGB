@@ -1,0 +1,18 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "api-gateway": "StartDebugging",
+        "ms-audit": "StartDebugging",
+        "ms-consent": "StartDebugging",
+        "ms-notify": "StartDebugging",
+        "ms-personal-data": "StartDebugging",
+        "ms-security": "StartDebugging",
+        "ms-transparency": "StartDebugging",
+        "ms-users": "StartDebugging"
+      }
+    }
+  }
+}
